@@ -101,15 +101,6 @@ nav.addEventListener('mouseout', handleHover.bind(1));
 
 const initialCoords = section1.getBoundingClientRect();
 
-//Sticky Navigation - BAD FOR USING ALOT OF PROCESSING
-// window.addEventListener('scroll', function () {
-//   console.log(window.scrollY);
-//   if (this.window.scrollY > initialCoords.top) {
-//     nav.classList.add('sticky');
-//   } else {
-//     nav.classList.remove('sticky');
-//   }
-// });
 //STICKY NAV NEW WITH INTERSECTION OBSERVER
 
 const header = document.querySelector('.header');
@@ -127,3 +118,5 @@ const obsOptions = {
 };
 const headerObserver = new IntersectionObserver(stickyNav, obsOptions);
 headerObserver.observe(header);
+
+//reveal sections
