@@ -239,3 +239,17 @@ const slider = function () {
   });
 };
 slider();
+
+document.addEventListener('DOMContentLoaded', function (e) {
+  console.log('DOM content loaded');
+});
+
+window.addEventListener('load', function (e) {
+  console.log('Page fully loaded', e);
+});
+
+// window.addEventListener('beforeunload', function (e) {
+//   e.preventDefault();
+//   console.log(e);
+//   e.returnValue = '';
+// });
